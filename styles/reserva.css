@@ -1,0 +1,47 @@
+
+#fundo{
+    padding: 50px;
+    margin: 0 auto;
+    background-color: rgb(38, 1, 1, 0.9);
+    width: 90%;
+}
+
+#quebra{
+    margin: 200px;
+
+}
+
+@media (max-width: 1700px){
+   .textoInput{
+       font-size: 15px;
+   }
+
+
+}
+
+@media(max-width: 490px){
+    #fundo{
+        padding: 0;
+        margin: 0 auto;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+
+    .input{
+        width: 200px;
+    }
+}
+
+
+@media (max-width: 388px){
+    .titleReserva h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 321px){
+    .titleReserva h1{
+        font-size: 25px;
+    }
+}

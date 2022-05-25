@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="/styles/reserva.css">
+    <script src="./script.js"></script>
+    <title>Burger House</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <label class="I" id="label-sanduiche" for="sanduiche"
+          ><img src="./styles/images/sanduiche.png" alt="">
+        </label>
+        <input type="checkbox" name="" id="sanduiche" />
+        <ul id="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./reserva.html">Reserva</a></li>
+          <li><a href="#">Cardápio</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="./login.html">Login</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav">
+        <a class="nav-link active color" aria-current="page" href="./index.html">HOME</a>
+        <a class="nav-link color" href="./cadastro.html">CADASTRE-SE</a>
+        
+        <a class="nav-link color" href="./reserva.html">FAÇA SUA RESERVA</a>
+        <li class="nav-item dropdown color">
+          <a
+          class="nav-link dropdown-toggle color"
+          data-bs-toggle="dropdown"
+          href="#"
+          role="button"
+          aria-expanded="false"
+          >CARDAPIO</a
+          >
+          <ul class="dropdown-menu yellow">
+            <li><a class="dropdown-item brown" href="#">Burgers</a></li>
+            <li>
+              <a class="dropdown-item brown" href="#"
+              >Acompanhamentos e sobremesas</a
+              >
+            </li>
+            <li><a class="dropdown-item brown" href="#">Bebidas</a></li>
+          </ul>
+        </li>
+        <a class="nav-link color" href="#">SOBRE NÓS</a>
+        <a class="nav-link color" href="./login.html"><span id="loginMenu">Login</span></a>
+        <a class="nav-link disabled burgerHouse"><img src="./styles/images/logo.png" alt="logo burger house" /><span id="cor">Burger House</span></a>
+      </nav>
+      </header>
+
+    <main>
+      <div class="titleReserva"><h2>Deu aquela fome? Faça já sua reserva Abaixo!</h2>
+
+      <h1>
+        Burger House
+        <img class="logoReser" src="./styles/images/logo.png" alt="" />
+      </h1></div>
+      
+
+      <br />
+      <div id="fundo">
+      <form class="formTam ">
+        <div class="form-row texto input">
+          <div class="form-group col-md-8 input">
+            <label for="inputEmail4"
+              ><span class="formTexto textoInput">Email</span></label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="Email"
+            />
+          </div>
+        </div>
+        <div class="form-group col-md-8 formTexto input">
+          <label for="inputAddress2"
+            ><span class="formTexto textoInput input">Digite sua senha</span></label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Digite sua senha"
+          />
+        </div>
+
+        <div class="form-group col-md-8 formTexto input">
+          <label for="inputAddress2"
+            ><span class="formTexto1 textoInput input">Digite seu endereço</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Seu endereço"
+          />
+        </div>
+        <div class="form-group col-md-4 formTexto input">
+          <label for="inputEstado"
+            ><span class="formTexto1 textoInput input">Escolha a unidade</span></label
+          >
+          <select id="inputEstado" class="form-control">
+            <option selected>Jd Paulista</option>
+            <option selected>Escolher...</option>
+            <option selected>Escolher...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4 formTexto textoInput input">
+          <label for="inputAddress2"
+            ><span class="formTexto textoInput input">Digite um horário</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Entre 10h - 22h"
+          />
+        </div>
+        <div class="form-row input">
+          <div class="form-group col-md-4 formTexto input">
+            <label for="inputEstado"
+              ><span class="formTexto textoInput input">Escolha o Estado</span></label
+            >
+            <select id="inputEstado" class="form-control">
+              <option selected>Acre (AC)</option>
+              <option selected>Alagoas (AL)</option>
+              <option selected>Amapá (AP)</option>
+              <option selected>Amazonas (AM)</option>
+              <option selected>Bahia (BA)</option>
+              <option selected>Ceará (CE)</option>
+              <option selected>Distrito Federal (DF)</option>
+              <option selected>Espírito Santo (ES)</option>
+              <option selected>Goiás (GO)</option>
+              <option selected>Maranhão (MA)</option>
+              <option selected>Mato Grosso (MT)</option>
+              <option selected>Mato Grosso do Sul (MS)</option>
+              <option selected>Minas Gerais (MG)</option>
+              <option selected>Pará (PA)</option>
+              <option selected>Paraíba (PB)</option>
+              <option selected>Paraná (PR)</option>
+              <option selected>Pernambuco (PE)</option>
+              <option selected>Piauí (PI)</option>
+              <option selected>Rio de Janeiro (RJ)</option>
+              <option selected>Rio Grande do Norte (RN)</option>
+              <option selected>Rio Grande do Sul (RS)</option>
+              <option selected>Rondônia (RO)</option>
+              <option selected>Roraima (RR)</option>
+              <option selected>Santa Catarina (SC)</option>
+              <option selected>São Paulo (SP)</option>
+              <option selected>Sergipe (SE)</option>
+              <option selected>Tocantins (TO)</option>
+            </select>
+          </div>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Reservar</button>
+      </form>
+    </div>
+    <br id="quebra" />
+      
+    </main>
+
+    <footer>
+      <div class="footer-dark">
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                <h3>Cardápio</h3>
+                <ul>
+                  <li><a href="#">Burgers</a></li>
+                  <li><a href="#">Acompanhamentos e sobremesas</a></li>
+                  <li><a href="#">Bebidas</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item">
+                <h3>Sobre nós</h3>
+                <ul>
+                  <li><a href="#">Time de Desenvolvimento</a></li>
+                  <li><a href="#">História</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 item text">
+                <h3>Burger House</h3>
+                <p>
+                  Somos a tão sonhada hamburgueria do Chef Gregori, estamos no
+                  mercado desde 2017 fazendo o melhor hamburguer artesanal de SP
+                </p>
+              </div>
+              <div class="col item social">
+                <a href="#"><i class="icon ion-social-facebook"></i></a
+                ><a href="#"><i class="icon ion-social-twitter"></i></a
+                ><a href="#"><i class="icon ion-social-snapchat"></i></a
+                ><a href="#"><i class="icon ion-social-instagram"></i></a>
+              </div>
+            </div>
+            <p class="copyright">Burger House © 2022</p>
+          </div>
+        </footer>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    </footer>
+  </body>
+</html>
